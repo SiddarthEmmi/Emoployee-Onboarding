@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1624486_employee.GetUserEmail</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetUserEmail</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetUserEmail = Class.create();
+GetUserEmail.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    getEmail: function() {
+        var userId = this.getParameter('sysparm_user_id');
+        var user = new GlideRecord('sys_user');
+        if (user.get(userId)) {
+            return user.getValue('email');
+        }
+        return '';
+    }
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 09:05:54</sys_created_on>
+        <sys_id>e5772a7183a12210066b11b6feaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetUserEmail</sys_name>
+        <sys_package display_value="Employee Onboarding" source="x_1624486_employee">d2865e3983212210066b11b6feaad3ce</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
+        <sys_update_name>sys_script_include_e5772a7183a12210066b11b6feaad3cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 09:05:54</sys_updated_on>
+    </sys_script_include>
+</record_update>
