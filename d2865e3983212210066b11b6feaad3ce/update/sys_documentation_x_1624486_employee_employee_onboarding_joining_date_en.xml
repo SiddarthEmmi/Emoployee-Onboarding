@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="joining_date" label="Joining Date&#9;" language="en" table="x_1624486_employee_employee_onboarding">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>joining_date</element>
+            <help/>
+            <hint/>
+            <label>Joining Date	</label>
+            <language>en</language>
+            <name>x_1624486_employee_employee_onboarding</name>
+            <plural>Joining Date	s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-17 08:00:52</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Joining Date</sys_name>
+            <sys_package display_value="Employee Onboarding" source="x_1624486_employee">d2865e3983212210066b11b6feaad3ce</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
+            <sys_update_name>sys_documentation_x_1624486_employee_employee_onboarding_joining_date_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-17 08:00:52</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

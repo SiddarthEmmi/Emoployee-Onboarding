@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1a085e3d83212210066b11b6feaad30b" label="Employee Onboarding" max_length="40" name="x_1624486_employee_employee_onboarding" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="email" type="string"/>
+        <element label="Joining Date&#9;" max_length="40" name="joining_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" display="true" label="Department" max_length="40" name="department" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Administrator" sequence="0" value="Administrator"/>
+                <element inactive="true" inactive_on_update="true" label="Sales"/>
+                <element inactive="true" inactive_on_update="true" label="Administrator"/>
+                <element inactive_on_update="false" label="IT" sequence="1" value="IT"/>
+                <element inactive_on_update="false" label="Sales" sequence="2" value="Sales"/>
+                <element inactive="true" inactive_on_update="true" label="IT"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Name" max_length="32" name="name" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="name"/>
+        </index>
+    </element>
+</database>
