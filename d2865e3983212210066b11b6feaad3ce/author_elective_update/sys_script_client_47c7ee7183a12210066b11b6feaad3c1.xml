@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Autofill Email</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var ga = new GlideAjax('GetUserEmail');
+    ga.addParam('sysparm_name', 'getEmail');
+    ga.addParam('sysparm_user_id', newValue);
+    ga.getXMLAnswer(function(response) {
+        g_form.setValue('email', response); // use 'u_email' if that is your actual field name
+    });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 09:07:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>47c7ee7183a12210066b11b6feaad3c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Autofill Email</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Onboarding" source="x_1624486_employee">d2865e3983212210066b11b6feaad3ce</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
+        <sys_update_name>sys_script_client_47c7ee7183a12210066b11b6feaad3c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 09:07:42</sys_updated_on>
+        <table>x_1624486_employee_employee_onboarding</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</application>
+        <file_path/>
+        <instance_id>5e622cec3bd16a58677f04e0b5e45acc</instance_id>
+        <instance_name>dev339991</instance_name>
+        <name>sys_script_client_47c7ee7183a12210066b11b6feaad3c1</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;name&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;Autofill Email&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading || newValue == '') {
+        return;
+    }
+
+    var ga = new GlideAjax('GetUserEmail');
+    ga.addParam('sysparm_name', 'getEmail');
+    ga.addParam('sysparm_user_id', newValue);
+    ga.getXMLAnswer(function(response) {
+        g_form.setValue('email', response); // use 'u_email' if that is your actual field name
+    });
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-17 09:07:42&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;47c7ee7183a12210066b11b6feaad3c1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Autofill Email&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Employee Onboarding" source="x_1624486_employee"&gt;d2865e3983212210066b11b6feaad3ce&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Employee Onboarding"&gt;d2865e3983212210066b11b6feaad3ce&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_47c7ee7183a12210066b11b6feaad3c1&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-17 09:07:42&lt;/sys_updated_on&gt;&lt;table&gt;x_1624486_employee_employee_onboarding&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1979119</payload_hash>
+        <record_name>Autofill Email</record_name>
+        <reverted_from/>
+        <source>9a8612f983212210066b11b6feaad31f</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 09:07:42</sys_created_on>
+        <sys_id>16082a7183a12210066b11b6feaad3d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196dd7fcf0c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 09:07:42</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>1a082a714ba12210524d0df53d0e9bd6</update_guid>
+        <update_guid_history>1a082a714ba12210524d0df53d0e9bd6:-1979119</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-18 09:52:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>385ca5a6b2414bf29601e6b5af927459</sys_id>
+        <sys_metadata>47c7ee7183a12210066b11b6feaad3c1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Autofill Email</sys_name>
+        <sys_package display_value="Employee Onboarding" source="x_1624486_employee">d2865e3983212210066b11b6feaad3ce</sys_package>
+        <sys_parent display_value="Employee Onboarding">1a085e3d83212210066b11b6feaad30b</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
+        <sys_scope_delete display_value="">0ace17a794174e6a98caa1b6c8cc0de1</sys_scope_delete>
+        <sys_update_name>sys_script_client_47c7ee7183a12210066b11b6feaad3c1</sys_update_name>
+        <sys_update_version display_value="sys_script_client_47c7ee7183a12210066b11b6feaad3c1">16082a7183a12210066b11b6feaad3d7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-18 09:52:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

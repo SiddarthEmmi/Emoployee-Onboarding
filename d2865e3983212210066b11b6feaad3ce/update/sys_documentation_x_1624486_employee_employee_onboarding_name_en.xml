@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="name" label="Name" language="en" table="x_1624486_employee_employee_onboarding">
+    <sys_documentation element="name" label="Employee Name" language="en" table="x_1624486_employee_employee_onboarding">
         <sys_documentation action="INSERT_OR_UPDATE">
             <element>name</element>
             <help/>
             <hint/>
-            <label>Name</label>
+            <label>Employee Name</label>
             <language>en</language>
             <name>x_1624486_employee_employee_onboarding</name>
-            <plural>Names</plural>
+            <plural>Employee Names</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-05-17 07:57:48</sys_created_on>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_name>Name</sys_name>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Employee Name</sys_name>
             <sys_package display_value="Employee Onboarding" source="x_1624486_employee">d2865e3983212210066b11b6feaad3ce</sys_package>
             <sys_policy/>
             <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
             <sys_update_name>sys_documentation_x_1624486_employee_employee_onboarding_name_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-05-17 07:57:48</sys_updated_on>
+            <sys_updated_on>2025-05-18 11:19:12</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
