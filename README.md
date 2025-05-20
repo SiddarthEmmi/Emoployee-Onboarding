@@ -99,3 +99,18 @@ Project Outcome
 * Achieved secure, real-time cross-instance integration
 * Highlighted ServiceNow’s ability to act as a backend integration platform
 * Reinforced best practices in REST API usage, modular scripting, and platform security
+
+Sample images are provided Below 👇 
+![Screenshot (18)](https://github.com/user-attachments/assets/34235b5f-cf3b-4ba4-baec-586e6de8f03a)
+![Screenshot (14)](https://github.com/user-attachments/assets/1e43b030-4d7d-4322-a09c-0bef5d3a05d4)
+![Screenshot (11)](https://github.com/user-attachments/assets/73616f03-5060-4766-a5d1-0881e13b91e0)
+![Screenshot (15)](https://github.com/user-attachments/assets/203c41c0-383b-4df3-99e8-01e93ccee59a)
+![Screenshot (19)](https://github.com/user-attachments/assets/5cbfef65-f358-4a98-aa73-1e99c22496a7)
+![Screenshot (13)](https://github.com/user-attachments/assets/e873b84e-aaeb-47f4-afc3-af45badd28a3)
+![Screenshot (12)](https://github.com/user-attachments/assets/04acabe2-d4dd-4524-96b6-c1919a477b10)
+![Screenshot (16)](https://github.com/user-attachments/assets/fcfbe019-4eed-4055-8487-49d411d97548)
+![Screenshot (7)](https://github.com/user-attachments/assets/d6ef44eb-7d5d-4a1a-b580-f02f9b36cfca)
+![Screenshot (17)](https://github.com/user-attachments/assets/0e2f8b04-fba7-4bbf-bfb7-e274eb11fc76)
+![Screenshot (9)](https://github.com/user-attachments/assets/506e7b4e-f887-412b-9011-23cd44fb62f0)
+![Screenshot (8)](https://github.com/user-attachments/assets/bc838471-13bf-4a42-9f38-f456a614f029)
+![Screenshot (11)](https://github.com/user-attachments/assets/d6f8f958-1fa7-4536-a3a2-9119b8e3b873)
