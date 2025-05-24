@@ -5,13 +5,13 @@
         <attributes>edge_encryption_enabled=true</attributes>
         <audit>false</audit>
         <calculation/>
-        <choice>1</choice>
+        <choice>3</choice>
         <choice_field/>
         <choice_table/>
         <column_label>Department</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>Administrator</default_value>
         <defaultsort/>
         <delete_roles/>
         <dependent/>
@@ -28,7 +28,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="Choice">choice</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>40</max_length>
         <name>x_1624486_employee_employee_onboarding</name>
         <next_element/>
@@ -53,7 +53,7 @@
         <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
         <sys_update_name>sys_dictionary_x_1624486_employee_employee_onboarding_department</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-17 08:47:28</sys_updated_on>
+        <sys_updated_on>2025-05-18 11:19:12</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

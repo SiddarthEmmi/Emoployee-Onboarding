@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1624486_employee.GetUserEmail</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetUserEmail</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var GetUserEmail = Class.create();
+GetUserEmail.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    getEmail: function() {
+        var userId = this.getParameter('sysparm_user_id');
+        var user = new GlideRecord('sys_user');
+        if (user.get(userId)) {
+            return user.getValue('email');
+        }
+        return '';
+    }
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 09:05:54</sys_created_on>
+        <sys_id>e5772a7183a12210066b11b6feaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetUserEmail</sys_name>
+        <sys_package display_value="Employee Onboarding" source="x_1624486_employee">d2865e3983212210066b11b6feaad3ce</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
+        <sys_update_name>sys_script_include_e5772a7183a12210066b11b6feaad3cd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 09:05:54</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</application>
+        <file_path/>
+        <instance_id>5e622cec3bd16a58677f04e0b5e45acc</instance_id>
+        <instance_name>dev339991</instance_name>
+        <name>sys_script_include_e5772a7183a12210066b11b6feaad3cd</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_1624486_employee.GetUserEmail&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;description/&gt;&lt;mobile_callable&gt;false&lt;/mobile_callable&gt;&lt;name&gt;GetUserEmail&lt;/name&gt;&lt;sandbox_callable&gt;false&lt;/sandbox_callable&gt;&lt;script&gt;&lt;![CDATA[var GetUserEmail = Class.create();
+GetUserEmail.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+    getEmail: function() {
+        var userId = this.getParameter('sysparm_user_id');
+        var user = new GlideRecord('sys_user');
+        if (user.get(userId)) {
+            return user.getValue('email');
+        }
+        return '';
+    }
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-05-17 09:05:54&lt;/sys_created_on&gt;&lt;sys_id&gt;e5772a7183a12210066b11b6feaad3cd&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;GetUserEmail&lt;/sys_name&gt;&lt;sys_package display_value="Employee Onboarding" source="x_1624486_employee"&gt;d2865e3983212210066b11b6feaad3ce&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Employee Onboarding"&gt;d2865e3983212210066b11b6feaad3ce&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_e5772a7183a12210066b11b6feaad3cd&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-05-17 09:05:54&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1783649479</payload_hash>
+        <record_name>GetUserEmail</record_name>
+        <reverted_from/>
+        <source>9a8612f983212210066b11b6feaad31f</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-17 09:05:55</sys_created_on>
+        <sys_id>c4a72abd83612210066b11b6feaad300</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>196dd7e29d20000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-17 09:05:55</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>c8a7e6bdcf612210e5b5695b5eddc2ff</update_guid>
+        <update_guid_history>c8a7e6bdcf612210e5b5695b5eddc2ff:1783649479</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-18 09:52:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>23d3a86e4eaa4e5a98132900b5ceb1e4</sys_id>
+        <sys_metadata>e5772a7183a12210066b11b6feaad3cd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>GetUserEmail</sys_name>
+        <sys_package display_value="Employee Onboarding" source="x_1624486_employee">d2865e3983212210066b11b6feaad3ce</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
+        <sys_scope_delete display_value="">0ace17a794174e6a98caa1b6c8cc0de1</sys_scope_delete>
+        <sys_update_name>sys_script_include_e5772a7183a12210066b11b6feaad3cd</sys_update_name>
+        <sys_update_version display_value="sys_script_include_e5772a7183a12210066b11b6feaad3cd">c4a72abd83612210066b11b6feaad300</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-18 09:52:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

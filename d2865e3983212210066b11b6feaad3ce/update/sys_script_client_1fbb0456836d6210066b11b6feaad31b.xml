@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Joining_date Error Handling</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    var joiningDate = g_form.getValue('joining_date');
+    if (!joiningDate) return false;
+
+    var today = new Date();
+    today.setHours(0, 0, 0, 0); // remove time portion
+
+    var joinDate = new Date(joiningDate);
+    joinDate.setHours(0, 0, 0, 0);
+
+    if (joinDate <= today) {
+        g_form.showFieldMsg('joining_date', 'Joining date must be a future date.', 'error');
+        return false; // prevent form submission
+    }
+
+    return true; // allow submission if valid
+}
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-05-18 11:02:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1fbb0456836d6210066b11b6feaad31b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Joining_date Error Handling</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Employee Onboarding" source="x_1624486_employee">d2865e3983212210066b11b6feaad3ce</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
+        <sys_update_name>sys_script_client_1fbb0456836d6210066b11b6feaad31b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-05-18 11:02:34</sys_updated_on>
+        <table>x_1624486_employee_employee_onboarding</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

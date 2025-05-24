@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Joining Date	</column_label>
+        <column_label>Joining Date</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -33,7 +33,7 @@
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="">glide_date</internal_type>
-        <mandatory>false</mandatory>
+        <mandatory>true</mandatory>
         <max_length>40</max_length>
         <name>x_1624486_employee_employee_onboarding</name>
         <next_element/>
@@ -58,7 +58,7 @@
         <sys_scope display_value="Employee Onboarding">d2865e3983212210066b11b6feaad3ce</sys_scope>
         <sys_update_name>sys_dictionary_x_1624486_employee_employee_onboarding_joining_date</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-17 08:00:52</sys_updated_on>
+        <sys_updated_on>2025-05-18 11:01:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
